@@ -5,8 +5,8 @@ namespace Shops.Data.Models
 {
     public class Car
     {
-        public int id { set; get; }
         [Key]
+        public int id { set; get; }
         public string name { set; get; }
         public string shortDesc { set; get; }
         public string longDesc { set; get; }

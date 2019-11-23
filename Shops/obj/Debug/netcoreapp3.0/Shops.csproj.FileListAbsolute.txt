@@ -30,8 +30,6 @@
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Shops.csproj.CopyComplete
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/_ViewStart.cshtml.g.cs
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/EntityFramework.SqlServer.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/EntityFramework.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.Data.Sqlite.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.DotNet.PlatformAbstractions.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.dll
@@ -43,13 +41,6 @@
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/SQLitePCLRaw.nativelibrary.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/SQLitePCLRaw.core.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/SQLitePCLRaw.provider.dynamic_cdecl.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/System.CodeDom.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/System.Configuration.ConfigurationManager.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/System.Data.SqlClient.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/System.Security.Cryptography.ProtectedData.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/win-arm64/native/sni.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/win-x64/native/sni.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/win-x86/native/sni.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/alpine-x64/native/libe_sqlite3.so
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/linux-arm/native/libe_sqlite3.so
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/linux-arm64/native/libe_sqlite3.so
@@ -62,7 +53,7 @@
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/win-x86/native/e_sqlite3.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll
-/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Shared/AllCars.cshtml.g.cs
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/ShopCart/Index.cshtml.g.cs
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Home/Index.cshtml.g.cs

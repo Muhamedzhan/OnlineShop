@@ -13,14 +13,8 @@ namespace Shops.Data
 
         public DbSet<Car> Car { get; set; }
         public DbSet<Category> Category { get; set; }
+        public DbSet<ShopCartItem> ShopCartItem { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Car>().HasData(new Car
-            {
-                id = 1,
-                name = ""
-            });
-        }
+        
     }
 }

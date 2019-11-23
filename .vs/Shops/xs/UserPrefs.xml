@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{3AB378E4-E6A9-4B47-AE02-69934A25B148}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Data/CarsContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Controllers/CarsController.cs">
     <Files>
-      <File FileName="Shops/Data/DBObjects.cs" Line="89" Column="18" />
-      <File FileName="Shops/Data/CarsContext.cs" Line="1" Column="1" />
+      <File FileName="Shops/Controllers/CarsController.cs" Line="41" Column="51" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,24 +9,23 @@
           <Node name="Shops" expanded="True">
             <Node name="Shops" expanded="True">
               <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="CarsController.cs" selected="True" />
+              </Node>
               <Node name="Data" expanded="True">
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Mocks" expanded="True" />
                 <Node name="Models" expanded="True" />
                 <Node name="Repository" expanded="True" />
-                <Node name="CarsContext.cs" selected="True" />
               </Node>
-              <Node name="Migrations" expanded="True">
-                <Node name="20191116201516_first.cs" expanded="True" />
-              </Node>
+              <Node name="Migrations" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Cars" expanded="True" />
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
@@ -39,9 +37,6 @@
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

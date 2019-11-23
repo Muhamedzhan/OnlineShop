@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Shops.Data;
 using Shops.Data.Interfaces;
 using Shops.Data.Mocks;
+using Shops.Data.Models;
 using Shops.Data.Repository;
 
 namespace Shops
@@ -24,11 +25,19 @@ namespace Shops
             //services.AddDbContext<AppDBContent>(options => options.UseSqlLite(.GetConnectionString("DefaultConnection")));
             services.AddTransient<IAllCars, CarRepository>();
             services.AddTransient<ICarsCategory, CategoryRepository>();
+
+            services.AddHttpContextAccessor();
+            services.AddScoped(sp => ShopCart.GetCart(sp));
+
             services.AddDbContext<CarsContext>(options =>
             {
                 options.UseSqlite("Filename=cars.db");
             });
+
             services.AddMvc(options=>options.EnableEndpointRouting = false);
+
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,11 +46,14 @@ namespace Shops
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseSession();
 
             app.UseMvc(routes=>
             {
                 routes.MapRoute(name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+                //routes.MapRoute(name: "categoryFilter",
+                    //template: "{controller=Car}/{action}/{category?}", defaults: new { controller = "Car", action = "List" });
             });
 
             using (var scope = app.ApplicationServices.CreateScope())

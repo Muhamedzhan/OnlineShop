@@ -1,7 +1,9 @@
 ﻿<Properties StartupConfiguration="{3AB378E4-E6A9-4B47-AE02-69934A25B148}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Controllers/CarsController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Program.cs">
     <Files>
       <File FileName="Shops/Controllers/CarsController.cs" Line="41" Column="51" />
+      <File FileName="Shops/Program.cs" Line="16" Column="1" />
+      <File FileName="Shops/Program.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,9 +13,7 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Controllers" expanded="True">
-                <Node name="CarsController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True">
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Mocks" expanded="True" />
@@ -34,6 +34,7 @@
                 <Node name="js" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>

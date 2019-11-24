@@ -57,3 +57,13 @@
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Shared/AllCars.cshtml.g.cs
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/ShopCart/Index.cshtml.g.cs
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Home/Index.cshtml.g.cs
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Order/Checkout.cshtml.g.cs
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Razor.Language.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.CodeAnalysis.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.CodeAnalysis.CSharp.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.CodeAnalysis.Razor.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Newtonsoft.Json.Bson.dll
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Order/Complete.cshtml.g.cs

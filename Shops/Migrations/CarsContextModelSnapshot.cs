@@ -70,6 +70,69 @@ namespace Shops.Migrations
                     b.ToTable("Category");
                 });
 
+            modelBuilder.Entity("Shops.Data.Models.Order", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("address")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(35);
+
+                    b.Property<DateTime>("dateTime")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(25);
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(20);
+
+                    b.Property<string>("phone")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(11);
+
+                    b.Property<string>("surname")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(20);
+
+                    b.HasKey("id");
+
+                    b.ToTable("Order");
+                });
+
+            modelBuilder.Entity("Shops.Data.Models.OrderDetail", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("carID")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("orderID")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<uint>("price")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("carID");
+
+                    b.HasIndex("orderID");
+
+                    b.ToTable("OrderDetail");
+                });
+
             modelBuilder.Entity("Shops.Data.Models.ShopCartItem", b =>
                 {
                     b.Property<int>("id")
@@ -97,6 +160,21 @@ namespace Shops.Migrations
                     b.HasOne("Shops.Data.Models.Category", "Category")
                         .WithMany("cars")
                         .HasForeignKey("categoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Shops.Data.Models.OrderDetail", b =>
+                {
+                    b.HasOne("Shops.Data.Models.Car", "car")
+                        .WithMany()
+                        .HasForeignKey("carID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Shops.Data.Models.Order", "order")
+                        .WithMany("orderDetails")
+                        .HasForeignKey("orderID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

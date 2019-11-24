@@ -25,6 +25,7 @@ namespace Shops
             //services.AddDbContext<AppDBContent>(options => options.UseSqlLite(.GetConnectionString("DefaultConnection")));
             services.AddTransient<IAllCars, CarRepository>();
             services.AddTransient<ICarsCategory, CategoryRepository>();
+            services.AddTransient<IAllOrders, OrdersRepository>();
 
             services.AddHttpContextAccessor();
             services.AddScoped(sp => ShopCart.GetCart(sp));
@@ -52,8 +53,6 @@ namespace Shops
             {
                 routes.MapRoute(name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
-                //routes.MapRoute(name: "categoryFilter",
-                    //template: "{controller=Car}/{action}/{category?}", defaults: new { controller = "Car", action = "List" });
             });
 
             using (var scope = app.ApplicationServices.CreateScope())

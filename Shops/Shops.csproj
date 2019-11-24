@@ -22,6 +22,7 @@
     <Folder Include="Views\ShopCart\" />
     <Folder Include="Migrations\" />
     <Folder Include="Views\Home\" />
+    <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\car1.jpg" />
@@ -40,6 +41,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Data\CarsContext.css" />

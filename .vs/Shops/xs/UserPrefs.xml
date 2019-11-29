@@ -1,13 +1,16 @@
 ﻿<Properties StartupConfiguration="{3AB378E4-E6A9-4B47-AE02-69934A25B148}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/cars.db">
     <Files>
       <File FileName="Shops/Views/Order/Checkout.cshtml" Line="5" Column="27" />
-      <File FileName="Shops/Data/Models/ShopCart.cs" Line="37" Column="30" />
-      <File FileName="Shops/Controllers/ShopCartController.cs" Line="34" Column="48" />
-      <File FileName="Shops/Controllers/OrderController.cs" Line="49" Column="2" />
-      <File FileName="Shops/Data/Models/Order.cs" Line="19" Column="27" />
+      <File FileName="Shops/Data/Models/ShopCart.cs" Line="1" Column="1" />
+      <File FileName="Shops/Controllers/ShopCartController.cs" Line="1" Column="1" />
+      <File FileName="Shops/Controllers/OrderController.cs" Line="1" Column="1" />
+      <File FileName="Shops/Data/Models/Order.cs" Line="1" Column="1" />
       <File FileName="Shops/Data/CarsContext.cs" Line="1" Column="1" />
       <File FileName="Shops/Startup.cs" Line="1" Column="1" />
+      <File FileName="Shops/Data/DBObjects.cs" Line="1" Column="1" />
+      <File FileName="Shops/Migrations/20191129180528_sec.cs" Line="1" Column="1" />
+      <File FileName="Shops/cars.db" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -38,7 +41,7 @@
                 <Node name="js" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
+              <Node name="cars.db" selected="True" />
             </Node>
           </Node>
         </State>

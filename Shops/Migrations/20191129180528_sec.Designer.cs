@@ -9,8 +9,8 @@ using Shops.Data;
 namespace Shops.Migrations
 {
     [DbContext(typeof(CarsContext))]
-    [Migration("20191124075255_last")]
-    partial class last
+    [Migration("20191129180528_sec")]
+    partial class sec
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

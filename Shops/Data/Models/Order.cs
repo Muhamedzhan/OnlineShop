@@ -38,7 +38,7 @@ namespace Shops.Data.Models
         public string email { get; set; }
 
         [BindNever]
-        [ScaffoldColumn(false)]
+        //[ScaffoldColumn(false)]
         public DateTime dateTime { get; set; }
 
         public List<OrderDetail> orderDetails { get; set; }

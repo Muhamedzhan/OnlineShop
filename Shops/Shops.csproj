@@ -23,6 +23,7 @@
     <Folder Include="Migrations\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Order\" />
+    <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\car1.jpg" />
@@ -42,6 +43,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.2.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Data\CarsContext.css" />

@@ -28,7 +28,7 @@ namespace Shops.Data.Repository
                 var orderDetail = new OrderDetail()
                 {
                     carID = el.car.id,
-                    orderID = order.id,
+                    order = order,
                     price = el.car.price
                 };
                 carsContext.OrderDetail.Add(orderDetail);

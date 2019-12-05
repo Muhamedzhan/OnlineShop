@@ -1,16 +1,13 @@
 ﻿<Properties StartupConfiguration="{3AB378E4-E6A9-4B47-AE02-69934A25B148}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/cars.db">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="Shops/Views/Order/Checkout.cshtml" Line="5" Column="27" />
-      <File FileName="Shops/Data/Models/ShopCart.cs" Line="1" Column="1" />
-      <File FileName="Shops/Controllers/ShopCartController.cs" Line="1" Column="1" />
-      <File FileName="Shops/Controllers/OrderController.cs" Line="1" Column="1" />
-      <File FileName="Shops/Data/Models/Order.cs" Line="1" Column="1" />
-      <File FileName="Shops/Data/CarsContext.cs" Line="1" Column="1" />
+      <File FileName="Shops/Controllers/AccountController.cs" Line="47" Column="69" />
+      <File FileName="Shops/Views/Account/Register.cshtml" Line="28" Column="7" />
+      <File FileName="Shops/Views/Order/Checkout.cshtml" Line="42" Column="9" />
+      <File FileName="Shops/Views/Shared/_Layout.cshtml" Line="14" Column="19" />
       <File FileName="Shops/Startup.cs" Line="1" Column="1" />
-      <File FileName="Shops/Data/DBObjects.cs" Line="1" Column="1" />
-      <File FileName="Shops/Migrations/20191129180528_sec.cs" Line="1" Column="1" />
-      <File FileName="Shops/cars.db" />
+      <File FileName="Shops/Data/Repository/OrdersRepository.cs" Line="40" Column="1" />
+      <File FileName="Shops/Views/Shared/AllCars.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -31,8 +28,13 @@
               <Node name="Properties" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Cars" expanded="True" />
+                <Node name="Home" expanded="True" />
                 <Node name="Order" expanded="True" />
-                <Node name="Shared" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
                 <Node name="ShopCart" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
@@ -41,7 +43,6 @@
                 <Node name="js" expanded="True" />
               </Node>
               <Node name="appsettings.json" expanded="True" />
-              <Node name="cars.db" selected="True" />
             </Node>
           </Node>
         </State>

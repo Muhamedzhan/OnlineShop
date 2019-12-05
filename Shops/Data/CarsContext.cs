@@ -1,10 +1,11 @@
 ﻿using System;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Shops.Data.Models;
 
 namespace Shops.Data
 {
-    public class CarsContext : DbContext
+    public class CarsContext : IdentityDbContext
     {
         public CarsContext(DbContextOptions<CarsContext> options) : base(options)
         {

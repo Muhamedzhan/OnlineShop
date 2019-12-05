@@ -26,8 +26,15 @@ using Shops.Data.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/muhamedzhan/Projects/Shops/Shops/Views/_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1f4c9e92ac8cdc8a6283c410688e6ddb8a8f2aea", @"/Views/Cars/List.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7950b58c52eb4c21903935b64c826c84e9a42c86", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"55821ee3d7b57facb12d1455aaf17227f3c30cca", @"/Views/_ViewImports.cshtml")]
     public class Views_Cars_List : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

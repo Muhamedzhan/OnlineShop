@@ -26,8 +26,15 @@ using Shops.Data.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/muhamedzhan/Projects/Shops/Shops/Views/_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"39387a4f1c19b53bfeb815795871719e0bce7711", @"/Views/ShopCart/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7950b58c52eb4c21903935b64c826c84e9a42c86", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"55821ee3d7b57facb12d1455aaf17227f3c30cca", @"/Views/_ViewImports.cshtml")]
     public class Views_ShopCart_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ShopCartViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -91,7 +98,7 @@ using Shops.Data.Models;
 #line hidden
 #nullable disable
             WriteLiteral("    <hr />\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39387a4f1c19b53bfeb815795871719e0bce77114974", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "39387a4f1c19b53bfeb815795871719e0bce77115151", async() => {
                 WriteLiteral("Buy");
             }
             );

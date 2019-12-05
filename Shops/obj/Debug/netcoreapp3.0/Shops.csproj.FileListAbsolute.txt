@@ -71,3 +71,5 @@
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/NLog.Extensions.Logging.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/NLog.Web.AspNetCore.dll
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Account/Register.cshtml.g.cs
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Account/Login.cshtml.g.cs

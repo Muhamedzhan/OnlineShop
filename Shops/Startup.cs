@@ -1,10 +1,11 @@
-using System;
+ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -35,6 +36,12 @@ namespace Shops
                 options.UseSqlite("Filename=cars.db");
             });
 
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 10;
+                options.Password.RequiredUniqueChars = 3;
+            }).AddEntityFrameworkStores<CarsContext>();
+            
             services.AddMvc(options=>options.EnableEndpointRouting = false);
 
             services.AddMemoryCache();
@@ -48,7 +55,7 @@ namespace Shops
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseSession();
-
+            app.UseAuthentication();
             app.UseMvc(routes=>
             {
                 routes.MapRoute(name: "default",

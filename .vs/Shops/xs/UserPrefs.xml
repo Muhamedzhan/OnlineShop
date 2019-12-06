@@ -1,68 +1,29 @@
 ﻿<Properties StartupConfiguration="{3AB378E4-E6A9-4B47-AE02-69934A25B148}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Data/Models/Order.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Hubs/ChatHub.cs">
     <Files>
-      <File FileName="Shops/Data/Models/Car.cs" Line="17" Column="44" />
-      <File FileName="Shops/Data/Models/Category.cs" Line="8" Column="22" />
-      <File FileName="Shops/Data/Mocks/MockCategory.cs" Line="15" Column="18" />
-      <File FileName="Shops/Data/Mocks/MockCars.cs" Line="24" Column="43" />
-      <File FileName="Shops/Controllers/CarsController.cs" Line="75" Column="51" />
-      <File FileName="Shops/Views/Cars/Create.cshtml" Line="69" Column="5" />
-      <File FileName="Shops/Data/Interfaces/IAllCars.cs" Line="1" Column="1" />
-      <File FileName="Shops/Data/Interfaces/IAllOrders.cs" Line="1" Column="1" />
-      <File FileName="Shops/Data/Interfaces/ICarsCategory.cs" Line="1" Column="1" />
-      <File FileName="Shops/ViewModels/CarsListViewModel.cs" Line="1" Column="1" />
-      <File FileName="Shops/ViewModels/HomeDetailsViewModel.cs" Line="1" Column="1" />
-      <File FileName="Shops/ViewModels/RegisterViewModel.cs" Line="20" Column="38" />
-      <File FileName="Shops/Data/CarsContext.cs" Line="22" Column="9" />
-      <File FileName="Shops/Views/Shared/AllCars.cshtml" Line="10" Column="90" />
-      <File FileName="Shops/Controllers/OrderController.cs" Line="38" Column="68" />
-      <File FileName="Shops/Controllers/ShopCartController.cs" Line="30" Column="1" />
-      <File FileName="Shops/Views/Order/Complete.cshtml" Line="3" Column="22" />
-      <File FileName="Shops/ViewModels/ShopCartViewModel.cs" Line="1" Column="1" />
-      <File FileName="Shops/Data/Repository/OrdersRepository.cs" Line="1" Column="1" />
-      <File FileName="Shops/Data/Models/ShopCart.cs" Line="45" Column="39" />
-      <File FileName="Shops/Controllers/AccountController.cs" Line="95" Column="14" />
-      <File FileName="Shops/Utilities/ValidEmailDomainAttribute.cs" Line="22" Column="1" />
-      <File FileName="Shops/Data/Models/Order.cs" Line="1" Column="1" />
+      <File FileName="Shops/Views/Home/Index.cshtml" Line="19" Column="15" />
+      <File FileName="Shops/Hubs/ChatHub.cs" Line="15" Column="1" />
+      <File FileName="Shops/Startup.cs" Line="70" Column="16" />
+      <File FileName="Shops/wwwroot/js/chat.js" Line="3" Column="15" />
+      <File FileName="Shops/ViewModels/HomeViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Shops" expanded="True">
             <Node name="Shops" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="Hubs" expanded="True">
+                <Node name="ChatHub.cs" selected="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True">
-                <Node name="Interfaces" expanded="True" />
-                <Node name="Mocks" expanded="True" />
-                <Node name="Models" expanded="True">
-                  <Node name="Order.cs" selected="True" />
-                </Node>
-                <Node name="Repository" expanded="True" />
-              </Node>
-              <Node name="Migrations" expanded="True">
-                <Node name="20191123055505_first.cs" expanded="True" />
-                <Node name="20191129180528_sec.cs" expanded="True" />
-              </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Utilities" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
                 <Node name="Cars" expanded="True" />
                 <Node name="Home" expanded="True" />
-                <Node name="Order" expanded="True" />
-                <Node name="Shared" expanded="True" />
-                <Node name="ShopCart" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
-                <Node name="img" expanded="True" />
                 <Node name="js" expanded="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>

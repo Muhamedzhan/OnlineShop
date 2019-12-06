@@ -25,6 +25,9 @@
     <Folder Include="Views\Order\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Utilities\" />
+    <Folder Include="tests\" />
+    <Folder Include="Services\" />
+    <Folder Include="Hubs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\car1.jpg" />
@@ -46,6 +49,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.2.0" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Data\CarsContext.css" />

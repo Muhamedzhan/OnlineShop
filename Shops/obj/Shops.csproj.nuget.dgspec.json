@@ -79,6 +79,10 @@
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[4.9.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.0, )"
             }
           },
           "imports": [

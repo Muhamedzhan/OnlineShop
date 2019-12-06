@@ -75,3 +75,8 @@
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Shops.csproj.CopyComplete
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Shops.dll
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Shops.pdb
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/xunit.abstractions.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/xunit.assert.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/xunit.core.dll
+/Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/xunit.execution.dotnet.dll
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Shops.csprojAssemblyReference.cache

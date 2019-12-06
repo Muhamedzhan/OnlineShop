@@ -14,11 +14,18 @@ using Shops.Data.Interfaces;
 using Shops.Data.Mocks;
 using Shops.Data.Models;
 using Shops.Data.Repository;
+using Shops.Hubs;
 
 namespace Shops
 {
     public class Startup
     {
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+        public IConfiguration Configuration { get; }
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -46,6 +53,8 @@ namespace Shops
 
             services.AddMemoryCache();
             services.AddSession();
+            services.AddSignalR();
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +65,14 @@ namespace Shops
             app.UseStaticFiles();
             app.UseSession();
             app.UseAuthentication();
+            app.UseAuthorization();
+
+            app.UseRouting();
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapRazorPages();
+                endpoints.MapHub<ChatHub>("/chatHub");
+            });
             app.UseMvc(routes=>
             {
                 routes.MapRoute(name: "default",
@@ -67,6 +84,9 @@ namespace Shops
                 CarsContext context = scope.ServiceProvider.GetRequiredService<CarsContext>();
                 DBObjects.First(context);
             }
+
+         
+
         }
     }
 }

@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using Shops.Data;
 using Shops.Data.Interfaces;
 using Shops.Data.Models;
 using Shops.ViewModels;
@@ -12,7 +16,7 @@ namespace Shops.Controllers
     {
         private readonly IAllCars _allCars;
         private readonly ICarsCategory _allCategories;
-
+        private readonly CarsContext _context;
         public CarsController(IAllCars iAllCars, ICarsCategory iCarsCat)
         {
             _allCars = iAllCars;
@@ -51,6 +55,32 @@ namespace Shops.Controllers
             ViewBag.Title = "Car page";
             
             return View(carObj);
+        }
+
+        
+        public IActionResult Create()
+        {
+            ViewData["categoryId"] = new SelectList(_allCategories.AllCategories, "id", "id");
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("id,name,shortDesc,longDesc,img,price,isFavourite,available,categoryId")] Car car)
+        {
+            if (ModelState.IsValid)
+            {
+                
+                _context.Add(car);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(car);
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Car.ToListAsync());
         }
     }
 }

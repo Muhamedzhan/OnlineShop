@@ -34,6 +34,8 @@ namespace Shops.Controllers
             if (ModelState.IsValid)
             {
                 allOrders.createOrder(order);
+
+                TempData["status"] = $"Congrats '{order.name}'!!!";
                 return RedirectToAction("Complete");
             }
 
@@ -43,6 +45,7 @@ namespace Shops.Controllers
         public IActionResult Complete()
         {
             ViewBag.Message = "Your order was completelely approved!";
+            ViewBag.MyStatus = TempData["status"];
             return View();
         }
     }

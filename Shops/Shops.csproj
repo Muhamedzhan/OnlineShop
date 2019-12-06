@@ -24,6 +24,7 @@
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Order\" />
     <Folder Include="Views\Account\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\car1.jpg" />
@@ -48,5 +49,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Data\CarsContext.css" />
+    <None Remove="Views\Home\Details.css" />
   </ItemGroup>
 </Project>

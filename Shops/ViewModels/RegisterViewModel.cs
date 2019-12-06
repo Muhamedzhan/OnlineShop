@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Mvc;
 using Shops.Data.Models;
+using Shops.Utilities;
 
 namespace Shops.ViewModels
 {
@@ -9,6 +11,9 @@ namespace Shops.ViewModels
     {
         [Required]
         [EmailAddress]
+        [Remote(action: "IsEmailInUse", controller: "Account")]
+        [ValidEmailDomain(allowedDomain: "mail.ru",
+            ErrorMessage = "Your email domain must be mail.ru")]
         public string Email { get; set; }
 
         [Required]

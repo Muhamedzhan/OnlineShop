@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace Shops.Data.Models
 {
-    public class Order
+    public class Order : IValidatableObject
     {
         [BindNever]
         public int id { get; set; }
@@ -42,5 +42,15 @@ namespace Shops.Data.Models
         public DateTime dateTime { get; set; }
 
         public List<OrderDetail> orderDetails { get; set; }
+
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            if (name.Equals("admin"))
+            {
+                yield return new ValidationResult(
+                    $"You cannot be admin",
+                    new[] { "name" });
+            } 
+        }
     }
 }

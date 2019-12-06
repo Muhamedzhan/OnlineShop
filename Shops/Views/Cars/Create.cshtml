@@ -1,0 +1,89 @@
+﻿@model Car
+
+@{
+    ViewBag.Title = "Create a new car";
+}
+
+<h1>Create a new car</h1>
+    <form asp-controller="Cars" asp-action="Create" method="post" class="mt-3">
+        <div class="form-group row">
+            <label asp-for="name" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="name" class="form-control" placeholder="Name"/>
+                <span asp-validation-for="name"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="shortDesc" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="shortDesc" class="form-control" placeholder="Short Description"/>
+                <span asp-validation-for="shortDesc"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="longDesc" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="longDesc" class="form-control" placeholder="Long Description"/>
+                <span asp-validation-for="longDesc"></span>
+            </div>
+        </div>
+
+        
+        <div class="form-group row">
+            <label asp-for="img" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="img" class="form-control" placeholder="Image source"/>
+                <span asp-validation-for="img"></span>
+            </div>
+        </div>
+
+        <!--Html.HiddenFor(m => m.img, new { Value = "/img/car1.jpg" })-->
+        <div class="form-group row">
+            <label asp-for="price" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="price" class="form-control" placeholder="Price"/>
+                <span asp-validation-for="price"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="isFavourite" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="isFavourite" class="form-control" placeholder="Is favourite"/>
+                <span asp-validation-for="isFavourite"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="available" class="col-sm-2 col-form-label"></label>
+            <div class="col-sm-10">
+                <input asp-for="available" class="form-control" placeholder="Is available"/>
+                <span asp-validation-for="available"></span>
+            </div>
+        </div>
+        <!--Html.HiddenFor(m => m.isFavourite, new { Value = false })-->
+        <!--Html.HiddenFor(m => m.available, new { Boolean = true })-->
+        
+        <!--Html.HiddenFor(m => m.categoryId, new { Value = 1 })-->
+        
+
+
+    <div class="form-group row">
+        <label asp-for="Category" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <select asp-for="categoryId" class="custom-select mr-sm-2"
+                    asp-items="ViewBag.categoryId">
+                <option value="">Please Select</option>
+            </select>
+            <span asp-validation-for="Category" class="text-danger"></span>
+        </div>
+        </div>
+
+    
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Create</button>
+        </div>
+    </div>
+
+    </form>

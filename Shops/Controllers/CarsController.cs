@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Shops.Data;
 using Shops.Data.Interfaces;
 using Shops.Data.Models;
+using Shops.Services;
 using Shops.ViewModels;
 
 namespace Shops.Controllers
@@ -16,8 +17,9 @@ namespace Shops.Controllers
     {
         private readonly IAllCars _allCars;
         private readonly ICarsCategory _allCategories;
-        private readonly CarsContext _context;
-        public CarsController(IAllCars iAllCars, ICarsCategory iCarsCat, CarsContext carsContext)
+        private readonly AccountServices _context;
+
+        public CarsController(IAllCars iAllCars, ICarsCategory iCarsCat, AccountServices carsContext)
         {
             _allCars = iAllCars;
             _allCategories = iCarsCat;
@@ -72,8 +74,7 @@ namespace Shops.Controllers
             if (ModelState.IsValid)
             {
                 
-                _context.Add(car);
-                await _context.SaveChangesAsync();
+                await _context.AddAndSave(car);
                 return RedirectToAction("Index", "Home");
             }
             return View(car);
@@ -87,7 +88,7 @@ namespace Shops.Controllers
                 return NotFound();
             }
 
-            var car = await _context.Car.FindAsync(id);
+            var car = await _context.DetailsCars(id);
             if (car == null)
             {
                 return NotFound();
@@ -108,9 +109,9 @@ namespace Shops.Controllers
             {
                 try
                 {
-                    _context.Update(car);
+                    await _context.Update(car);
                     TempData["id2"] = car.name;
-                    await _context.SaveChangesAsync();
+                  
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -130,7 +131,7 @@ namespace Shops.Controllers
 
         private bool CarExists(int id)
         {
-            return _context.Car.Any(e => e.id == id);
+            return _context.CarExis(id);
         }
 
         // GET: Car/Delete/5
@@ -141,12 +142,14 @@ namespace Shops.Controllers
                 return NotFound();
             }
 
-            var car = await _context.Car
-                .FirstOrDefaultAsync(m => m.id == id);
+            var car = await _context.DetailsCars(id);
+           
             if (car == null)
             {
                 return NotFound();
             }
+
+            
 
             return View(car);
         }
@@ -156,15 +159,14 @@ namespace Shops.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var car = await _context.Car.FindAsync(id);
-            _context.Car.Remove(car);
-            await _context.SaveChangesAsync();
+            var car = await _context.DetailsCars(id);
+            await _context.Delete(car);
             return RedirectToAction("Index", "Home");
         }
 
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Car.ToListAsync());
+            return View(await _context.GetCars());
         }
     }
 }

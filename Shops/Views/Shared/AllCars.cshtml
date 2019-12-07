@@ -1,25 +1,33 @@
 ﻿@model Car
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TegHelpers
-
+@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<IdentityUser> SignInManager
+@{
+    var user = await UserManager.GetUserAsync(User);
+}
 <div class="col lg-4">
                 <img class="img-thumbnail" src="@Model.img" alt="@Model.name" />
                 <h2>Model: @Model.name</h2>
                 <p>Description: @Model.shortDesc</p>
                 <p>Price: @Model.price.ToString("c")</p>
+    
                 <table>
                     <thead>
                         <tr>
                             <td>
                                 <p><a class="btn btn-warning" asp-controller="ShopCart" asp-action="addToCart" asp-route-id="@Model.id">Buy</a></p>
                             </td>
+                            @if (SignInManager.IsSignedIn(User) && user.Email.Equals("sa@mail.ru"))
+    {
                             <td>
                                 <p><a class="btn btn-warning" asp-controller="Cars" asp-action="Edit" asp-route-id="@Model.id">Edit</a></p>
                             </td>
                             <td>
                                 <p><a class="btn btn-warning" asp-controller="Cars" asp-action="Delete" asp-route-id="@Model.id">Delete</a></p>
                             </td>
+                            }
                         </tr>
                     </thead>
                 </table>
-                
+    
 </div>

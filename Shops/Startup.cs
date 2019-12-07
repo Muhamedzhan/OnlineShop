@@ -15,6 +15,7 @@ using Shops.Data.Mocks;
 using Shops.Data.Models;
 using Shops.Data.Repository;
 using Shops.Hubs;
+using Shops.Services;
 
 namespace Shops
 {
@@ -55,6 +56,9 @@ namespace Shops
             services.AddSession();
             services.AddSignalR();
             services.AddRazorPages();
+
+            services.AddScoped<AccountServices>();
+            services.AddScoped<ICarsRepo, CarsRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

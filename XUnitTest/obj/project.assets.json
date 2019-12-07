@@ -366,6 +366,15 @@
           }
         }
       },
+      "Moq/3.1.416.3": {
+        "type": "package",
+        "compile": {
+          "lib/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/Moq.dll": {}
+        }
+      },
       "NETStandard.Library/1.6.0": {
         "type": "package",
         "dependencies": {
@@ -2423,6 +2432,18 @@
         "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netcore50/_._",
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
+      ]
+    },
+    "Moq/3.1.416.3": {
+      "sha512": "rChp3XDMsDnFaznElHZHqysZpCw0cy5+LHIRHmaoGs/l33QoyJLr+HbZcvlzN5D2fjn/nDA8X939C4QsSNYs4Q==",
+      "type": "package",
+      "path": "moq/3.1.416.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/Moq.dll",
+        "moq.3.1.416.3.nupkg.sha512",
+        "moq.nuspec"
       ]
     },
     "NETStandard.Library/1.6.0": {
@@ -6574,6 +6595,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Microsoft.NET.Test.Sdk >= 16.2.0",
+      "Moq >= 3.0.1",
       "coverlet.collector >= 1.0.1",
       "xunit >= 2.4.0",
       "xunit.runner.visualstudio >= 2.4.0"
@@ -6618,6 +6640,10 @@
             "target": "Package",
             "version": "[16.2.0, )"
           },
+          "Moq": {
+            "target": "Package",
+            "version": "[3.0.1, )"
+          },
           "coverlet.collector": {
             "target": "Package",
             "version": "[1.0.1, )"
@@ -6649,5 +6675,27 @@
         "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "XUnitTest depends on Moq (>= 3.0.1) but Moq 3.0.1 was not found. An approximate best match of Moq 3.1.416.3 was resolved.",
+      "libraryId": "Moq",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Moq 3.1.416.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Moq",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
 }

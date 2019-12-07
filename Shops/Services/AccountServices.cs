@@ -51,6 +51,11 @@ namespace Shops.Services
             //await _context.SaveChangesAsync();
         }
 
+        //public Task DetailsCars(int id)
+        //{
+            
+          //  return _carsRepo.GetDetail(id);
+        //}
 
         public async Task Delete(Car car)
         {
@@ -59,5 +64,10 @@ namespace Shops.Services
             //_context.Roles.Remove(role);
             //await _context.SaveChangesAsync();
         }
+
+        //internal void Delete(Task car)
+        //{
+          //  throw new NotImplementedException();
+        //}
     }
 }

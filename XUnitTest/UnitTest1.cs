@@ -1,5 +1,10 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using Moq;
+using Shops.Data.Interfaces;
+using Shops.Data.Models;
+using Shops.Services;
 using Xunit;
 
 
@@ -11,7 +16,7 @@ namespace XUnitTest
         public async Task AddTest()
         {
             var fake = Mock.Of<ICarsRepo>();
-            var carService = new AccountService(fake);
+            var carService = new AccountServices(fake);
 
             var car = new Car() { name = "admin admin" };
             await carService.AddAndSave(car);
@@ -20,25 +25,25 @@ namespace XUnitTest
         public async Task UpdateTest()
         {
             var fake = Mock.Of<ICarsRepo>();
-            var carService = new AccountService(fake);
+            var carService = new AccountServices(fake);
 
-            var car = new Cars() { name = "admin 1" };
+            var car = new Car() { name = "admin 1" };
             await carService.Update(car);
         }
         [Fact]
         public async Task RemoveTest()
         {
             var fake = Mock.Of<ICarsRepo>();
-            var carService = new AccountService(fake);
-            var car = new Cars() { name = "admin 1" };
+            var carService = new AccountServices(fake);
+            var car = new Car() { name = "admin 1" };
             await carService.Delete(car);
         }
         [Fact]
         public async Task DetailTest()
         {
             var fake = Mock.Of<ICarsRepo>();
-            var carService = new AccountService(fake);
-            var id = "2";
+            var carService = new AccountServices(fake);
+            var id = 2;
             await carService.DetailsCars(id);
         }
         [Fact]
@@ -54,9 +59,9 @@ namespace XUnitTest
             fakeRepositoryMock.Setup(x => x.GetAll()).ReturnsAsync(roles);
 
 
-            var carService = new CarsService(fakeRepositoryMock.Object);
+            var carService = new AccountServices(fakeRepositoryMock.Object);
 
-            var resultCars = await carService.GetCar();
+            var resultCars = await carService.GetCars();
 
             Assert.Collection(resultCars, car =>
             {
@@ -64,7 +69,7 @@ namespace XUnitTest
             },
             car =>
             {
-                Assert.Equal("invalid car", car.name);
+                Assert.Equal("invalid user", car.name);
             });
         }
     }

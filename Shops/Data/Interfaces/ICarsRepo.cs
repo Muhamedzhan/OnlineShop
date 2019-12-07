@@ -14,7 +14,7 @@ namespace Shops.Data.Interfaces
         void Delete(Car car);
         Task Save();
         Task<List<Car>> GetAll();
-        Task<Car> GetDetail(int ? id);
+        Task<Car> GetDetail(int ?id);
         bool Exist(int ? id);
     }
 }

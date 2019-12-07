@@ -1,7 +1,12 @@
 ﻿<Properties StartupConfiguration="{3AB378E4-E6A9-4B47-AE02-69934A25B148}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Data/Repository/CarsRepo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="XUnitTest/CarsControllerTest.cs">
     <Files>
-      <File FileName="Shops/Data/Repository/CarsRepo.cs" Line="18" Column="1" IsPinned="True" />
+      <File FileName="XUnitTest/UnitTest1.cs" Line="24" Column="15" />
+      <File FileName="Shops/Data/Interfaces/ICarsRepo.cs" />
+      <File FileName="Shops/Controllers/CarsController.cs" />
+      <File FileName="Shops/Services/AccountServices.cs" />
+      <File FileName="Shops/Data/Repository/CarsRepo.cs" />
+      <File FileName="XUnitTest/CarsControllerTest.cs" Line="12" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,9 +18,7 @@
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Mocks" expanded="True" />
                 <Node name="Models" expanded="True" />
-                <Node name="Repository" expanded="True">
-                  <Node name="CarsRepo.cs" selected="True" />
-                </Node>
+                <Node name="Repository" expanded="True" />
               </Node>
               <Node name="Hubs" expanded="True" />
               <Node name="Migrations" expanded="True" />
@@ -37,14 +40,19 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="PackageDependencies" expanded="True" />
               </Node>
+              <Node name="CarsControllerTest.cs" selected="True" />
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Shops" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Shops PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.ItemProperties.XUnitTest FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

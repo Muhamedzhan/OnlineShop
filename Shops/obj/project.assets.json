@@ -8752,7 +8752,8 @@
     ]
   },
   "packageFolders": {
-    "/Users/muhamedzhan/.nuget/packages/": {}
+    "/Users/muhamedzhan/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -8763,6 +8764,9 @@
       "packagesPath": "/Users/muhamedzhan/.nuget/packages/",
       "outputPath": "/Users/muhamedzhan/Projects/Shops/Shops/obj/",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "/Users/muhamedzhan/.config/NuGet/NuGet.Config"
       ],

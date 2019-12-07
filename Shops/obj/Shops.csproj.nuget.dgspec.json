@@ -13,6 +13,9 @@
         "packagesPath": "/Users/muhamedzhan/.nuget/packages/",
         "outputPath": "/Users/muhamedzhan/Projects/Shops/Shops/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "/Users/muhamedzhan/.config/NuGet/NuGet.Config"
         ],

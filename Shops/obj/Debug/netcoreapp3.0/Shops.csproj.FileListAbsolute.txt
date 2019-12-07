@@ -59,7 +59,6 @@
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Account/Register.cshtml.g.cs
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Cars/Create.cshtml.g.cs
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Cars/List.cshtml.g.cs
-/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Home/Create.cshtml.g.cs
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Home/Details.cshtml.g.cs
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Home/Index.cshtml.g.cs
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Order/Checkout.cshtml.g.cs
@@ -80,3 +79,5 @@
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/xunit.core.dll
 /Users/muhamedzhan/Projects/Shops/Shops/bin/Debug/netcoreapp3.0/xunit.execution.dotnet.dll
 /Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Shops.csprojAssemblyReference.cache
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Cars/Delete.cshtml.g.cs
+/Users/muhamedzhan/Projects/Shops/Shops/obj/Debug/netcoreapp3.0/Razor/Views/Cars/Edit.cshtml.g.cs

@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shops", "Shops\Shops.csproj", "{3AB378E4-E6A9-4B47-AE02-69934A25B148}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest", "XUnitTest\XUnitTest.csproj", "{17596DFE-9FC2-4353-A0FF-475FD775F8F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{3AB378E4-E6A9-4B47-AE02-69934A25B148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AB378E4-E6A9-4B47-AE02-69934A25B148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AB378E4-E6A9-4B47-AE02-69934A25B148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17596DFE-9FC2-4353-A0FF-475FD775F8F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17596DFE-9FC2-4353-A0FF-475FD775F8F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17596DFE-9FC2-4353-A0FF-475FD775F8F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17596DFE-9FC2-4353-A0FF-475FD775F8F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

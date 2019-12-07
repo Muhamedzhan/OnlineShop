@@ -1,36 +1,58 @@
 ﻿<Properties StartupConfiguration="{3AB378E4-E6A9-4B47-AE02-69934A25B148}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Hubs/ChatHub.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="Shops/Views/Home/Index.cshtml" Line="19" Column="15" />
-      <File FileName="Shops/Hubs/ChatHub.cs" Line="15" Column="1" />
-      <File FileName="Shops/Startup.cs" Line="70" Column="16" />
-      <File FileName="Shops/wwwroot/js/chat.js" Line="3" Column="15" />
-      <File FileName="Shops/ViewModels/HomeViewModel.cs" Line="1" Column="1" />
+      <File FileName="Shops/Data/Mocks/MockCars.cs" Line="9" Column="37" />
+      <File FileName="Shops/Controllers/CarsController.cs" Line="25" Column="10" />
+      <File FileName="Shops/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="Shops/Views/Cars/List.cshtml" Line="1" Column="1" />
+      <File FileName="Shops/Views/Home/Details.cshtml" Line="1" Column="1" />
+      <File FileName="Shops/Views/Shared/AllCars.cshtml" Line="24" Column="17" />
+      <File FileName="Shops/Views/Cars/Edit.cshtml" Line="40" Column="68" />
+      <File FileName="Shops/Views/Cars/Delete.cshtml" Line="15" Column="18" />
+      <File FileName="Shops/Views/Cars/Create.cshtml" Line="40" Column="68" />
+      <File FileName="XUnitTest/UnitTest1.cs" Line="8" Column="10" />
+      <File FileName="XUnitTest/CarsControllerTest.cs" Line="9" Column="1" />
+      <File FileName="Shops/Startup.cs" Line="1" Column="1" />
+      <File FileName="Shops/Views/Home/Index.cshtml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Shops" expanded="True">
             <Node name="Shops" expanded="True">
-              <Node name="Hubs" expanded="True">
-                <Node name="ChatHub.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+                <Node name="Mocks" expanded="True" />
+                <Node name="Models" expanded="True" />
+                <Node name="Repository" expanded="True" />
               </Node>
+              <Node name="Hubs" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="Utilities" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Account" expanded="True" />
                 <Node name="Cars" expanded="True" />
-                <Node name="Home" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="Order" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="ShopCart" expanded="True" />
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="js" expanded="True" />
-              </Node>
+              <Node name="wwwroot" expanded="True" />
             </Node>
+            <Node name="XUnitTest" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Shops PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.XUnitTest FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

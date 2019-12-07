@@ -17,10 +17,11 @@ namespace Shops.Controllers
         private readonly IAllCars _allCars;
         private readonly ICarsCategory _allCategories;
         private readonly CarsContext _context;
-        public CarsController(IAllCars iAllCars, ICarsCategory iCarsCat)
+        public CarsController(IAllCars iAllCars, ICarsCategory iCarsCat, CarsContext carsContext)
         {
             _allCars = iAllCars;
             _allCategories = iCarsCat;
+            _context = carsContext;
         }
 
         [Route("Cars/List")]
@@ -73,9 +74,92 @@ namespace Shops.Controllers
                 
                 _context.Add(car);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Home");
             }
             return View(car);
+        }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            ViewData["categoryId"] = new SelectList(_allCategories.AllCategories, "id", "id");
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var car = await _context.Car.FindAsync(id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+            return View(car);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("id,name,shortDesc,longDesc,img,price,isFavourite,available,categoryId")] Car car)
+        {
+            if (id != car.id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(car);
+                    TempData["id2"] = car.name;
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!CarExists(car.id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return View(car);
+        }
+
+        private bool CarExists(int id)
+        {
+            return _context.Car.Any(e => e.id == id);
+        }
+
+        // GET: Car/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var car = await _context.Car
+                .FirstOrDefaultAsync(m => m.id == id);
+            if (car == null)
+            {
+                return NotFound();
+            }
+
+            return View(car);
+        }
+
+        // POST: Car/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var car = await _context.Car.FindAsync(id);
+            _context.Car.Remove(car);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
         }
 
         public async Task<IActionResult> Index()

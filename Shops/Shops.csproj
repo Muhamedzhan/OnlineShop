@@ -25,12 +25,12 @@
     <Folder Include="Views\Order\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Utilities\" />
-    <Folder Include="tests\" />
     <Folder Include="Services\" />
     <Folder Include="Hubs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\img\car1.jpg" />
+    <Content Remove="wwwroot\js\signalr\dist\browser\signalr.min.js" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.0.0" />

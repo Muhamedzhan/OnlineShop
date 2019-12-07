@@ -1,18 +1,7 @@
 ﻿<Properties StartupConfiguration="{3AB378E4-E6A9-4B47-AE02-69934A25B148}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Startup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Shops/Data/Repository/CarsRepo.cs">
     <Files>
-      <File FileName="XUnitTest/UnitTest1.cs" Line="50" Column="33" />
-      <File FileName="XUnitTest/CarsControllerTest.cs" Line="9" Column="1" />
-      <File FileName="Shops/Controllers/CarsController.cs" Line="28" Column="1" />
-      <File FileName="Shops/Data/Interfaces/IAllOrders.cs" Line="1" Column="1" />
-      <File FileName="Shops/Data/Interfaces/ICarsCategory.cs" Line="1" Column="1" />
-      <File FileName="Shops/Services/AccountServices.cs" Line="12" Column="48" />
-      <File FileName="Shops/Data/Interfaces/ICarsRepo.cs" Line="20" Column="2" />
-      <File FileName="Shops/Data/Repository/CarsRepo.cs" Line="43" Column="33" />
-      <File FileName="../../Downloads/UsersController.cs" Line="1" Column="1" />
-      <File FileName="../../Downloads/UsersServiceTest.cs" Line="6" Column="1" />
-      <File FileName="../../Downloads/UsersService.cs" Line="15" Column="34" />
-      <File FileName="Shops/Startup.cs" Line="56" Column="35" />
+      <File FileName="Shops/Data/Repository/CarsRepo.cs" Line="18" Column="1" IsPinned="True" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,7 +13,9 @@
                 <Node name="Interfaces" expanded="True" />
                 <Node name="Mocks" expanded="True" />
                 <Node name="Models" expanded="True" />
-                <Node name="Repository" expanded="True" />
+                <Node name="Repository" expanded="True">
+                  <Node name="CarsRepo.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="Hubs" expanded="True" />
               <Node name="Migrations" expanded="True" />
@@ -41,7 +32,6 @@
                 <Node name="ShopCart" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True" />
-              <Node name="Startup.cs" selected="True" />
             </Node>
             <Node name="XUnitTest" expanded="True">
               <Node name="Dependencies" expanded="True">
